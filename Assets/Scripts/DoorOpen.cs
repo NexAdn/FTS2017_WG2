@@ -15,11 +15,28 @@ public class DoorOpen : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (TurningValue < MaxTurningValue) {
+		/*if (TurningValue < MaxTurningValue) {
 			transform.Rotate (Vector2.up, Time.deltaTime * TurningSpeed, Space.World);
 			TurningValue += 1;
+			TurningSpeed += 0.2f;
+			Debug.Log ("TurningValue" + TurningValue);
+			Debug.Log (transform.rotation);
+
+		}*/
+	}
+	public void Open(){
+		Debug.Log ("function called");
+		while (TurningValue < MaxTurningValue) {
+			transform.Rotate (Vector2.up, Time.deltaTime * TurningSpeed, Space.World);
+			TurningValue += 1;
+			TurningSpeed += 0.2f;
+			Debug.Log ("TurningValue" + TurningValue);
+			Debug.Log (transform.rotation);
+			System.Threading.Thread.Sleep (10);
 
 		}
-
 	}
+
+
+				
 }
