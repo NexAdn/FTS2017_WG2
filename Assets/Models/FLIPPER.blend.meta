@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 0ed73e699dc3af84fb3d3904c5cc245c
+timeCreated: 1507892552
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Feder
+    100002: //RootNode
+    100004: Flipperarm_links
+    100006: Flipperarm_rechts
+    100008: Hindernis1
+    100010: Hindernis2
+    100012: Knopf_links
+    100014: Knopf_rechts
+    100016: Kugelbecken
+    100018: Monitor
+    100020: Rampe
+    100022: Rampe2
+    100024: Rampe3
+    100026: Rohr
+    100028: Rohr2
+    100030: Tisch
+    400000: Feder
+    400002: //RootNode
+    400004: Flipperarm_links
+    400006: Flipperarm_rechts
+    400008: Hindernis1
+    400010: Hindernis2
+    400012: Knopf_links
+    400014: Knopf_rechts
+    400016: Kugelbecken
+    400018: Monitor
+    400020: Rampe
+    400022: Rampe2
+    400024: Rampe3
+    400026: Rohr
+    400028: Rohr2
+    400030: Tisch
+    2300000: Feder
+    2300002: Flipperarm_links
+    2300004: Flipperarm_rechts
+    2300006: Hindernis1
+    2300008: Hindernis2
+    2300010: Knopf_links
+    2300012: Knopf_rechts
+    2300014: Kugelbecken
+    2300016: Monitor
+    2300018: Rampe
+    2300020: Rampe2
+    2300022: Rampe3
+    2300024: Rohr
+    2300026: Rohr2
+    2300028: Tisch
+    3300000: Feder
+    3300002: Flipperarm_links
+    3300004: Flipperarm_rechts
+    3300006: Hindernis1
+    3300008: Hindernis2
+    3300010: Knopf_links
+    3300012: Knopf_rechts
+    3300014: Kugelbecken
+    3300016: Monitor
+    3300018: Rampe
+    3300020: Rampe2
+    3300022: Rampe3
+    3300024: Rohr
+    3300026: Rohr2
+    3300028: Tisch
+    4300000: Hindernis2
+    4300002: Hindernis1
+    4300004: Rampe3
+    4300006: Rampe2
+    4300008: Flipperarm_rechts
+    4300010: Flipperarm_links
+    4300012: Knopf_rechts
+    4300014: Knopf_links
+    4300016: Rampe
+    4300018: Feder
+    4300020: Rohr2
+    4300022: Rohr
+    4300024: Kugelbecken
+    4300026: Monitor
+    4300028: Tisch
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 5e6bb5578aea6c64e9a5de7340795e62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 34fdd763a089a5d4eb65220694418ad9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
