@@ -32,6 +32,7 @@ public class DoorOpen : MonoBehaviour {
 			TurningSpeed += 0.2f;
 			Debug.Log ("TurningValue" + TurningValue);
 			Debug.Log (transform.rotation);
+			System.Threading.Thread.Sleep (10);
 
 		}
 	}
