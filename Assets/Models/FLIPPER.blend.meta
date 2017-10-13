@@ -22,6 +22,7 @@ ModelImporter:
     100028: Rohr
     100030: Rohr2
     100032: Tisch
+    100034: Plane
     400000: Cube
     400002: Feder
     400004: //RootNode
@@ -39,6 +40,7 @@ ModelImporter:
     400028: Rohr
     400030: Rohr2
     400032: Tisch
+    400034: Plane
     2300000: Cube
     2300002: Feder
     2300004: Flipperarm_links
@@ -55,6 +57,7 @@ ModelImporter:
     2300026: Rohr
     2300028: Rohr2
     2300030: Tisch
+    2300032: Plane
     3300000: Cube
     3300002: Feder
     3300004: Flipperarm_links
@@ -71,6 +74,7 @@ ModelImporter:
     3300026: Rohr
     3300028: Rohr2
     3300030: Tisch
+    3300032: Plane
     4300000: Cube
     4300002: Hindernis2
     4300004: Hindernis1
@@ -87,6 +91,7 @@ ModelImporter:
     4300026: Kugelbecken
     4300028: Monitor
     4300030: Tisch
+    4300032: Plane
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
@@ -95,6 +100,31 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: 5e6bb5578aea6c64e9a5de7340795e62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001__flipperTable_png
+    second: {fileID: 2100000, guid: ed270c50c5e9ba845b1d3eb30157a496, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_002
+    second: {fileID: 2100000, guid: 4187a8cbc85246245b983ee9034e4c11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__Untitled_005
+    second: {fileID: 2100000, guid: 3b0943a990cddad46b65cd9baadd36ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold
+    second: {fileID: 2100000, guid: 952e643b6d043964a90fbe0a9d10dc42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mattMettal
+    second: {fileID: 2100000, guid: 29e3940742f1edb4abc527b1c39e44ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
