@@ -18,6 +18,9 @@ public class DoorOpen : MonoBehaviour {
 		if (TurningValue < MaxTurningValue) {
 			transform.Rotate (Vector2.up, Time.deltaTime * TurningSpeed, Space.World);
 			TurningValue += 1;
+			TurningSpeed += 0.2f;
+			Debug.Log ("TurningValue" + TurningValue);
+			Debug.Log (transform.rotation);
 
 		}
 
