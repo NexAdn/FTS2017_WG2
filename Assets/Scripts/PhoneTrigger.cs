@@ -14,9 +14,9 @@ public class PhoneTrigger : MonoBehaviour {
 	void Update () {
 		
 	}
-    void OnTriggerEnter(Collider collider)
+    void OnTriggerStay(Collider collider)
     {
-        Debug.Log(collider.tag);
+        //Debug.Log(collider.tag);
         if (collider.tag == "Phone")
         {
             phoneDock.Dock();
@@ -26,7 +26,7 @@ public class PhoneTrigger : MonoBehaviour {
     }
     void OnTriggerExit(Collider collider)
     {
-        Debug.Log("exit");
+        //Debug.Log("exit");
         phoneDock.unDock();
     }
 }

@@ -34,7 +34,7 @@ public class PhoneDock : MonoBehaviour {
     public void toggle ()
     {
         dock = !dock;
-        Debug.Log(dock);
+        //Debug.Log(dock);
     }
 
     public void Dock()
