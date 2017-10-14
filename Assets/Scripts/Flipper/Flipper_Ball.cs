@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayAnimation : MonoBehaviour {
+public class Flipper_Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,9 +12,5 @@ public class PlayAnimation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-	}
-	public void Play(){
-        Debug.Log("closing");
-		GetComponent<Animator> ().SetBool ("DoorOpen", true);
 	}
 }

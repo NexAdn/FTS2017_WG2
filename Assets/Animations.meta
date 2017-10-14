@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b38252a3b0229234d95ebf1993d92cdd
 folderAsset: yes
 timeCreated: 1507893306
+=======
+guid: 62876b0fe6dad4c49a4e35babc577215
+folderAsset: yes
+timeCreated: 1507898568
+>>>>>>> origin/Flipper
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

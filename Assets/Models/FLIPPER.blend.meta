@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: c782da4e941ddbc408a74005e805aa66
+timeCreated: 1507896121
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Feder
+    100004: //RootNode
+    100006: Flipperarm_links
+    100008: Flipperarm_rechts
+    100010: Hindernis1
+    100012: Hindernis2
+    100014: Knopf_links
+    100016: Knopf_rechts
+    100018: Kugelbecken
+    100020: Monitor
+    100022: Rampe
+    100024: Rampe2
+    100026: Rampe3
+    100028: Rohr
+    100030: Rohr2
+    100032: Tisch
+    100034: Plane
+    400000: Cube
+    400002: Feder
+    400004: //RootNode
+    400006: Flipperarm_links
+    400008: Flipperarm_rechts
+    400010: Hindernis1
+    400012: Hindernis2
+    400014: Knopf_links
+    400016: Knopf_rechts
+    400018: Kugelbecken
+    400020: Monitor
+    400022: Rampe
+    400024: Rampe2
+    400026: Rampe3
+    400028: Rohr
+    400030: Rohr2
+    400032: Tisch
+    400034: Plane
+    2300000: Cube
+    2300002: Feder
+    2300004: Flipperarm_links
+    2300006: Flipperarm_rechts
+    2300008: Hindernis1
+    2300010: Hindernis2
+    2300012: Knopf_links
+    2300014: Knopf_rechts
+    2300016: Kugelbecken
+    2300018: Monitor
+    2300020: Rampe
+    2300022: Rampe2
+    2300024: Rampe3
+    2300026: Rohr
+    2300028: Rohr2
+    2300030: Tisch
+    2300032: Plane
+    3300000: Cube
+    3300002: Feder
+    3300004: Flipperarm_links
+    3300006: Flipperarm_rechts
+    3300008: Hindernis1
+    3300010: Hindernis2
+    3300012: Knopf_links
+    3300014: Knopf_rechts
+    3300016: Kugelbecken
+    3300018: Monitor
+    3300020: Rampe
+    3300022: Rampe2
+    3300024: Rampe3
+    3300026: Rohr
+    3300028: Rohr2
+    3300030: Tisch
+    3300032: Plane
+    4300000: Cube
+    4300002: Hindernis2
+    4300004: Hindernis1
+    4300006: Rampe3
+    4300008: Rampe2
+    4300010: Flipperarm_rechts
+    4300012: Flipperarm_links
+    4300014: Knopf_rechts
+    4300016: Knopf_links
+    4300018: Rampe
+    4300020: Feder
+    4300022: Rohr2
+    4300024: Rohr
+    4300026: Kugelbecken
+    4300028: Monitor
+    4300030: Tisch
+    4300032: Plane
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 5e6bb5578aea6c64e9a5de7340795e62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001__flipperTable_png
+    second: {fileID: 2100000, guid: ed270c50c5e9ba845b1d3eb30157a496, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_002
+    second: {fileID: 2100000, guid: 4187a8cbc85246245b983ee9034e4c11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__Untitled_005
+    second: {fileID: 2100000, guid: 3b0943a990cddad46b65cd9baadd36ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold
+    second: {fileID: 2100000, guid: 952e643b6d043964a90fbe0a9d10dc42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mattMettal
+    second: {fileID: 2100000, guid: 29e3940742f1edb4abc527b1c39e44ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 34fdd763a089a5d4eb65220694418ad9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
