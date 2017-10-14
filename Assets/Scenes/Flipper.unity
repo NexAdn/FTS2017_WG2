@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 258128945}
   - component: {fileID: 258128944}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (2)
+  m_Name: Barrier (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,34 +201,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4288324651708788, guid: e7b9cf89703d4c7439e06f80254acffd,
     type: 2}
   m_PrefabInternal: {fileID: 465728528}
---- !u!1 &345652083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 345652084}
-  m_Layer: 0
-  m_Name: BallBox
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &345652084
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 345652083}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 0.31, z: -1.078}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_Children: []
-  m_Father: {fileID: 322386014}
-  m_RootOrder: 32
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &465728528
 Prefab:
   m_ObjectHideFlags: 0
@@ -555,7 +527,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 715546183}
   m_LocalRotation: {x: 0, y: 0.9063079, z: -0.42261827, w: 0}
-  m_LocalPosition: {x: 0.541, y: 1.731, z: 4.41}
+  m_LocalPosition: {x: 0.541, y: 2.106, z: 4.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -570,7 +542,6 @@ GameObject:
   m_Component:
   - component: {fileID: 856707137}
   - component: {fileID: 856707140}
-  - component: {fileID: 856707139}
   - component: {fileID: 856707138}
   m_Layer: 0
   m_Name: Display
@@ -590,7 +561,7 @@ Transform:
   m_LocalScale: {x: 0.063, y: 1, z: 0.042}
   m_Children: []
   m_Father: {fileID: 322386014}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 86.12, y: 0, z: 0}
 --- !u!23 &856707138
 MeshRenderer:
@@ -626,20 +597,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &856707139
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 856707136}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &856707140
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -659,7 +616,7 @@ GameObject:
   - component: {fileID: 1116974305}
   - component: {fileID: 1116974304}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (3)
+  m_Name: Barrier (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,7 +836,7 @@ GameObject:
   - component: {fileID: 1269235021}
   - component: {fileID: 1269235020}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (4)
+  m_Name: Barrier (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1045,7 +1002,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 322386014}
-  m_RootOrder: 33
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!65 &1329684738
 BoxCollider:
@@ -1160,7 +1117,7 @@ GameObject:
   - component: {fileID: 1490615608}
   - component: {fileID: 1490615607}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (1)
+  m_Name: Barrier (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1260,7 +1217,7 @@ Transform:
   m_LocalScale: {x: 0.015, y: 1, z: 0.015}
   m_Children: []
   m_Father: {fileID: 322386014}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!23 &1541838308
 MeshRenderer:
@@ -1385,7 +1342,7 @@ GameObject:
   - component: {fileID: 1684607638}
   - component: {fileID: 1684607637}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (5)
+  m_Name: Barrier (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1530,7 +1487,7 @@ GameObject:
   - component: {fileID: 1847245830}
   - component: {fileID: 1847245829}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (6)
+  m_Name: Barrier (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1700,7 +1657,7 @@ GameObject:
   - component: {fileID: 2111943545}
   - component: {fileID: 2111943544}
   m_Layer: 0
-  m_Name: Barrier_upper_Launch (7)
+  m_Name: Barrier (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1800,7 +1757,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 322386014}
-  m_RootOrder: 34
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2130359665
 BoxCollider:
