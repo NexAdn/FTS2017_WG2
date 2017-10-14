@@ -27,6 +27,8 @@ public class PhoneDock : MonoBehaviour {
             GetComponent<VRTK_InteractableObject>().isGrabbable = false;
             GetComponent<VRTK_ChildOfControllerGrabAttach>().StopGrab(false);
             inside = false;
+
+            GetComponent<StateHandler>().UpdateScreen(2);
         }
 
     }

@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lighttrigger : MonoBehaviour {
-
-    public LightOnOff light;
-    public StateHandler states;
+public class Toggle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +11,15 @@ public class Lighttrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 	}
-    void OnTriggerEnter(Collider collider)
+
+    public void toggleOn()
     {
-        light.On();
-        states.UpdateScreen(2);
+        GetComponent<Light>().enabled = true;
+    }
+    public void toggleOff()
+    {
+        GetComponent<Light>().enabled = false;
     }
 }
