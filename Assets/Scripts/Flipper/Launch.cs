@@ -36,9 +36,12 @@ public class Launch : MonoBehaviour {
     }
 
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider maybeBall)
     {
-        Animator.SetTrigger("Launch");
-        launchAnimationStarted = true;
+        if (maybeBall.tag == "Flipper_Ball")
+        {
+            Animator.SetTrigger("Launch");
+            launchAnimationStarted = true;
+        }
     }
 }

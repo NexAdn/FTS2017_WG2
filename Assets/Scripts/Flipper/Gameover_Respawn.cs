@@ -12,8 +12,11 @@ public class Gameover_Respawn : MonoBehaviour {
 	}
 
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider maybeBall)
     {
-        Ball.transform.position = new Vector3(ballOrigin.transform.position.x, ballOrigin.transform.position.y, ballOrigin.transform.position.z);
+        if (maybeBall.tag == "Flipper_Ball")
+        {
+            Ball.transform.position = new Vector3(ballOrigin.transform.position.x, ballOrigin.transform.position.y, ballOrigin.transform.position.z);
+        }
     }
 }
