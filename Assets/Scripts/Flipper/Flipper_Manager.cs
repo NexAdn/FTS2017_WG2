@@ -5,6 +5,8 @@ using UnityEngine;
 public class Flipper_Manager : MonoBehaviour {
     
     private Animator Animator;
+    public Transform Ball;
+    public Transform ballOrigin;
 
     public float springStrength = 100;
 
@@ -17,7 +19,9 @@ public class Flipper_Manager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Animator = GetComponent<Animator>();
-	}
+
+        Ball.transform.position = new Vector3(ballOrigin.transform.position.x, ballOrigin.transform.position.y, ballOrigin.transform.position.z);
+    }
 
     // Update is called once per frame
     void Update()
