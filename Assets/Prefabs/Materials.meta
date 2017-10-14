@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 475cf7f5d62731a44b50724b0e30143f
 folderAsset: yes
 timeCreated: 1507895275
+=======
+guid: 62d1ad8e6b9ed634a8dab6f074acb267
+folderAsset: yes
+timeCreated: 1507900375
+>>>>>>> origin/VRSetup
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
