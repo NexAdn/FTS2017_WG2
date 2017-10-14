@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin_Collider : MonoBehaviour {
+public class Coin_Manager : MonoBehaviour {
 
     public Animator Animator;
     public GameObject Coin;
-    public float coinAnimationDuration = 0f;
-    private int coinsInserted;
+    public int coinsNeeded = 3;
+    public float coinAnimationDuration = 1f;
+    public Transform Ball;
+    public Transform ballOrigin;
+    private int coinsInserted = 0;
     private bool animationStarted = false;
     private float animationTime = 0f;
 
@@ -29,17 +32,34 @@ public class Coin_Collider : MonoBehaviour {
                 Coin.SetActive(false);
             }
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            startFlipper();
+        }
+    }
 
     void OnTriggerEnter(Collider maybeCoin)
     {
-        Debug.Log("Collided with someting at the Coin insertion");
         if (maybeCoin.tag == "Coin")
         {
-            Debug.Log("Collided with Coin");
             Coin.SetActive(true);
             Animator.SetTrigger("Coin_insert");
             animationStarted = true;
+
+            coinsInserted += 1;
+
+            if (coinsInserted >= coinsNeeded)
+            {
+                startFlipper();
+            }
         }
+    }
+
+    void startFlipper()
+    {
+        Ball.transform.position = new Vector3(ballOrigin.transform.position.x, ballOrigin.transform.position.y, ballOrigin.transform.position.z);
+
+
     }
 }

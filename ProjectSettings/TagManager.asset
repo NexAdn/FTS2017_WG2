@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Flipper_Ball
+  - Coin_Inserter
   layers:
   - Default
   - TransparentFX

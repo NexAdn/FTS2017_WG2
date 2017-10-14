@@ -447,6 +447,40 @@ Animator:
   m_PrefabParentObject: {fileID: 95723435740118928, guid: e7b9cf89703d4c7439e06f80254acffd,
     type: 2}
   m_PrefabInternal: {fileID: 465728528}
+--- !u!1 &533966900 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1468728480301236, guid: e7b9cf89703d4c7439e06f80254acffd,
+    type: 2}
+  m_PrefabInternal: {fileID: 465728528}
+--- !u!65 &533966904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 533966900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08111596, y: 0.07628001, z: 0.07628001}
+  m_Center: {x: -0.020034984, y: -0.00000047683716, z: 0.00000011920929}
+--- !u!1 &551155031 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1800040675015262, guid: e7b9cf89703d4c7439e06f80254acffd,
+    type: 2}
+  m_PrefabInternal: {fileID: 465728528}
+--- !u!65 &551155035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551155031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.083885536, y: 0.07628001, z: 0.07628001}
+  m_Center: {x: 0.021419771, y: -0.00000047683716, z: 0.00000011920929}
 --- !u!1 &715546183
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 32852a9e88e0aa14fb7929d71d86f8bc, type: 3}
       propertyPath: m_TagString
-      value: Coin
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 32852a9e88e0aa14fb7929d71d86f8bc, type: 3}
       propertyPath: m_IsActive
@@ -1215,13 +1249,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1684607635}
-  m_LocalRotation: {x: 0, y: 0.8161376, z: 0, w: 0.5778576}
-  m_LocalPosition: {x: 0.213, y: 0.804, z: 0.245}
+  m_LocalRotation: {x: 0, y: 0.8793578, z: 0, w: 0.4761615}
+  m_LocalPosition: {x: 0.2235, y: 0.8041, z: 0.262}
   m_LocalScale: {x: 0.01, y: 0.099999994, z: 0.099999994}
   m_Children: []
   m_Father: {fileID: 322386014}
   m_RootOrder: 28
-  m_LocalEulerAnglesHint: {x: 0, y: 109.4, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 123.13, z: 0}
 --- !u!23 &1684607637
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1602,7 +1636,7 @@ GameObject:
   - component: {fileID: 2130359666}
   m_Layer: 0
   m_Name: Coin_Collider
-  m_TagString: Untagged
+  m_TagString: Coin_Inserter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1645,4 +1679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Animator: {fileID: 497769785}
   Coin: {fileID: 1149550624}
+  coinsNeeded: 3
   coinAnimationDuration: 1
+  Ball: {fileID: 1663897325}
+  ballOrigin: {fileID: 1320195542}
