@@ -340,7 +340,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad6ec2305003b5b459eace1bf390b9e7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ad6ec2305003b5b459eace1bf390b9e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2618,7 +2618,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 467906, guid: b266f4e4ee23ffc45b9b5f47b06e3a89, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 467906, guid: b266f4e4ee23ffc45b9b5f47b06e3a89, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3579,7 +3579,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d708f82cc8ad4fa4894622148fedc3e7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d708f82cc8ad4fa4894622148fedc3e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3956,7 +3956,7 @@ Transform:
   m_LocalScale: {x: 2.0320854, y: 0.35536683, z: 0.64007455}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &797180081
 MonoBehaviour:
@@ -6671,7 +6671,7 @@ Transform:
   - {fileID: 847484244}
   - {fileID: 649824231}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394740363
 GameObject:
@@ -6779,7 +6779,7 @@ Transform:
   - {fileID: 1430634380}
   - {fileID: 1149522935}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407333714
 GameObject:
@@ -7187,7 +7187,7 @@ Transform:
   - {fileID: 751810457}
   - {fileID: 1822428316}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1461739351
 GameObject:
@@ -8632,6 +8632,48 @@ MonoBehaviour:
     fallbackTypeName: VRTK.SDK_FallbackController
     typeName: VRTK.SDK_DaydreamController
     descriptionIndex: 0
+--- !u!1001 &1683525960
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4778727263979302, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d1ebbc3c1e560a649b33b259148e9186, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1696281095
 GameObject:
   m_ObjectHideFlags: 0
