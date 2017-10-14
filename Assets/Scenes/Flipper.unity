@@ -442,6 +442,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 484318245}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &497769785 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95723435740118928, guid: e7b9cf89703d4c7439e06f80254acffd,
+    type: 2}
+  m_PrefabInternal: {fileID: 465728528}
 --- !u!1 &715546183
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +652,10 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.655926, y: 1.2259313, z: 0.10402024}
   m_Center: {x: 0.12201801, y: -0.06926249, z: 0.12391395}
+--- !u!1 &1149550624 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 32852a9e88e0aa14fb7929d71d86f8bc, type: 3}
+  m_PrefabInternal: {fileID: 1151693274}
 --- !u!1001 &1151693274
 Prefab:
   m_ObjectHideFlags: 0
@@ -729,6 +738,10 @@ Prefab:
     - target: {fileID: 100002, guid: 32852a9e88e0aa14fb7929d71d86f8bc, type: 3}
       propertyPath: m_TagString
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 32852a9e88e0aa14fb7929d71d86f8bc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 32852a9e88e0aa14fb7929d71d86f8bc, type: 3}
@@ -1037,6 +1050,77 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1490615605}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1541838306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1541838307}
+  - component: {fileID: 1541838309}
+  - component: {fileID: 1541838308}
+  m_Layer: 0
+  m_Name: Ball_Hider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1541838307
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541838306}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0.2625, y: 0.6198, z: 0.5427}
+  m_LocalScale: {x: 0.015, y: 1, z: 0.015}
+  m_Children: []
+  m_Father: {fileID: 322386014}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+--- !u!23 &1541838308
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541838306}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: eb073539e68394b44a88dbf63b60e973, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1541838309
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1541838306}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1571662645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,6 +1599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2130359664}
   - component: {fileID: 2130359665}
+  - component: {fileID: 2130359666}
   m_Layer: 0
   m_Name: Coin_Collider
   m_TagString: Untagged
@@ -1542,8 +1627,22 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2130359663}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2130359666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130359663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168842eb7099e554d850389897faebed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Animator: {fileID: 497769785}
+  Coin: {fileID: 1149550624}
+  coinAnimationDuration: 1
