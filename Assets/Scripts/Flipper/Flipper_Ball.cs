@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Launch : MonoBehaviour {
+public class Flipper_Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
