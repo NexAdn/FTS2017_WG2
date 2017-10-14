@@ -14,6 +14,7 @@ public class PlayAnimation : MonoBehaviour {
 		
 	}
 	public void Play(){
+        Debug.Log("closing");
 		GetComponent<Animator> ().SetBool ("DoorOpen", true);
 	}
 }
