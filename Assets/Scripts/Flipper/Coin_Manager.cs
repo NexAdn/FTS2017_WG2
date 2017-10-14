@@ -59,7 +59,5 @@ public class Coin_Manager : MonoBehaviour {
     void startFlipper()
     {
         Ball.transform.position = new Vector3(ballOrigin.transform.position.x, ballOrigin.transform.position.y, ballOrigin.transform.position.z);
-
-
     }
 }
