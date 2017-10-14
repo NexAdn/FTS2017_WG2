@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRTK;
 
 public class StateHandler : MonoBehaviour {
 
@@ -32,6 +33,8 @@ public class StateHandler : MonoBehaviour {
             spotlight.toggleOff();
         }else if (gameState == 3)
         {
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<VRTK_InteractableObject>().isGrabbable = true;
             akku.TurnOff();
             spotlight.toggleOff();
             pin.TurnOn();
