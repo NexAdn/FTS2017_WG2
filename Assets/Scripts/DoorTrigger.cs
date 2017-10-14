@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorTrigger : MonoBehaviour {
 
 	// Use this for initialization
-	// public PlayAnimation playAnimation;
+	public PlayAnimation playAnimation;
 
 
 	void Start () {
@@ -18,6 +18,10 @@ public class DoorTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collider){
-        Debug.Log(collider.tag);
+		if (collider.tag == "Controller") {
+			Debug.Log ("hit");
+
+			playAnimation.Play ();
+		}
 	}
 }
