@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Coin_Manager : MonoBehaviour {
 
+    public AudioSource CoinInsertSound;
     public Animator Animator;
     public GameObject Coin;
     public int coinsNeeded = 3;
@@ -33,6 +34,7 @@ public class Coin_Manager : MonoBehaviour {
                 animationStarted = false;
                 animationTime = 0f;
                 Coin.SetActive(false);
+                CoinInsertSound.Play();
             }
         }
 

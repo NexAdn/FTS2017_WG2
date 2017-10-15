@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Win_giveFree_Golfball : MonoBehaviour {
 
+    public AudioSource winSound;
     public GameObject golfHidePlane;
     public float giveBallFreeTimeAfterWin = 3f;
     public Text flipperDisplay;
@@ -31,6 +32,7 @@ public class Win_giveFree_Golfball : MonoBehaviour {
         if (maybeBall.tag == "Flipper_Ball")
         {
             won = true;
+            winSound.Play();
         }
     }
 }
