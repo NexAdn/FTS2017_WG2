@@ -533,6 +533,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1563756925976378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4271322694135012}
+  - component: {fileID: 108268838862875568}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1571083986954914
 GameObject:
   m_ObjectHideFlags: 1
@@ -1192,7 +1208,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1571083986954914}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.65, y: 1.253, z: 3.83}
+  m_LocalPosition: {x: 1.65, y: 1.253, z: 3.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4648583361257612}
@@ -1211,6 +1227,19 @@ Transform:
   m_Father: {fileID: 4054507406688448}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4271322694135012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563756925976378}
+  m_LocalRotation: {x: 0.35145277, y: 0.013692159, z: -0.0051406804, w: 0.9360914}
+  m_LocalPosition: {x: -1.45, y: 26.37, z: 15.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4562562890679388}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 41.157, y: 1.676, z: 0}
 --- !u!4 &4284207859018296
 Transform:
   m_ObjectHideFlags: 1
@@ -1429,8 +1458,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1552199104080664}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.248, y: 0.08287424, z: 2.873}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 1.14, y: 0.03, z: 1.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4924032423207168}
@@ -1471,9 +1500,10 @@ Transform:
   - {fileID: 4510383793754586}
   - {fileID: 4174822104947382}
   - {fileID: 4648583361257612}
+  - {fileID: 4271322694135012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!4 &4607574986221356
 Transform:
   m_ObjectHideFlags: 1
@@ -3341,7 +3371,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -4.4644718e-14, y: -0.00000011684962, z: -0.000000023601345}
+  m_ConnectedAnchor: {x: 0.00000002980233, y: -1.09402504e-14, z: -2.2097167e-15}
   m_UseSpring: 1
   m_Spring:
     spring: 20
@@ -3375,7 +3405,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -4.4644718e-14, y: -0.00000011684962, z: -0.000000023601334}
+  m_ConnectedAnchor: {x: 0.00000002980233, y: -1.09402504e-14, z: -2.2097158e-15}
   m_UseSpring: 1
   m_Spring:
     spring: 20
@@ -3821,6 +3851,42 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!108 &108268838862875568
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563756925976378}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.4
+  m_Range: 41.1
+  m_SpotAngle: 69
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.84
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114057922747501110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3832,7 +3898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564c7e5d1e3a92848976dff7c3c14edf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FlipperManager: {fileID: 114797868879646486}
+  FlipperManager: {fileID: 0}
 --- !u!114 &114126970138950414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3844,11 +3910,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028922cdb84903346af73a66a66ed78e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 95291649168955524}
-  Ball: {fileID: 54363216100216028}
-  forceVector: {fileID: 4070949569237358}
+  Animator: {fileID: 0}
+  Ball: {fileID: 0}
+  forceVector: {fileID: 0}
   timeAfterLaunchAnimation: 0.5
-  forceToBallAtLaunch: 4
+  forceToBallAtLaunch: 0.5899
 --- !u!114 &114150451845433528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3908,7 +3974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eea6c08925adbe4c8cf97311e7237e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  golfHidePlane: {fileID: 1422823687064988}
+  golfHidePlane: {fileID: 0}
   giveBallFreeTimeAfterWin: 3
 --- !u!114 &114541325705455062
 MonoBehaviour:
@@ -3921,13 +3987,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168842eb7099e554d850389897faebed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 95291649168955524}
-  Coin: {fileID: 1832230075769946}
+  Animator: {fileID: 0}
+  Coin: {fileID: 0}
   coinsNeeded: 3
   coinAnimationDuration: 1
-  Ball: {fileID: 4220680584864702}
-  ballOrigin: {fileID: 4613722912454698}
-  flipperDisplay: {fileID: 114697617866013856}
+  Ball: {fileID: 0}
+  ballOrigin: {fileID: 0}
+  flipperDisplay: {fileID: 0}
 --- !u!114 &114617726790688528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3940,7 +4006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   golfBall: {fileID: 0}
-  golfBallOrigin: {fileID: 4174822104947382}
+  golfBallOrigin: {fileID: 0}
 --- !u!114 &114654286275784376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3952,7 +4018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06bee77a51620ff45bc7d1024f3b2ad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FlipperManager: {fileID: 114797868879646486}
+  FlipperManager: {fileID: 0}
 --- !u!114 &114697617866013856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3997,11 +4063,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb01bdac213345498853d7ef0211076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  springStrength: 200
+  springStrength: 100
   leftButton: {fileID: 0}
   rightButton: {fileID: 0}
-  rightFlipper: {fileID: 54784679991972636}
-  leftFlipper: {fileID: 54510994874803990}
+  rightFlipper: {fileID: 0}
+  leftFlipper: {fileID: 0}
 --- !u!114 &114910804421084240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4013,8 +4079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc9aa45953cca44f936ee50b5f7f8c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ball: {fileID: 4220680584864702}
-  ballOrigin: {fileID: 4613722912454698}
+  Ball: {fileID: 0}
+  ballOrigin: {fileID: 0}
 --- !u!124 &124589980811387328
 Behaviour:
   m_ObjectHideFlags: 1
