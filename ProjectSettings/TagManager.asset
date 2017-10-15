@@ -7,6 +7,8 @@ TagManager:
   - FxTemporaire
   - projectile
   - TeleportIgnore
+  - Phone
+  - Golf_Ball
   layers:
   - Default
   - TransparentFX

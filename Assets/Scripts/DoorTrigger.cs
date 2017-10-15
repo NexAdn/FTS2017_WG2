@@ -18,9 +18,9 @@ public class DoorTrigger : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collider){
-        Debug.Log(collider.tag);
-
-            Debug.Log("hit");
+            //Debug.Log("hit");
             playAnimation.Play();
+
+
 	}
 }
