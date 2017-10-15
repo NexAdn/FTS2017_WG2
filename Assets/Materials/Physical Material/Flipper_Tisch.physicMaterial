@@ -8,6 +8,6 @@ PhysicMaterial:
   m_Name: Flipper_Tisch
   dynamicFriction: 0.1
   staticFriction: 0
-  bounciness: 0
+  bounciness: 0.5
   frictionCombine: 0
   bounceCombine: 0

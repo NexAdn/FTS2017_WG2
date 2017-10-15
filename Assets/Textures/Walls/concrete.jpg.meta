@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: f4c9defadafedc745a22f3af55fd74a9
 timeCreated: 1507970216
+=======
+guid: 78784bee4bfd1554da2190b1d1837e01
+timeCreated: 1507970045
+>>>>>>> Flipper
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
