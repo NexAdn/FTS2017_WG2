@@ -4,38 +4,76 @@ using UnityEngine;
 
 public class Flipper_Manager : MonoBehaviour {
 
-    private Animator Animator;
+    public float springStrength = 100;
+    public AudioSource flipperLeftUpSound;
+    public AudioSource flipperLeftDownSound;
+    public AudioSource flipperRightUpSound;
+    public AudioSource flipperRightDownSound;
 
-	// Use this for initialization
-	void Start () {
-        Animator = GetComponent<Animator>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Animator.SetTrigger("Launch");
-        }
+    [SerializeField]
+    private Rigidbody rightFlipper = null;
 
+    [SerializeField]
+    private Rigidbody leftFlipper = null;
+
+
+    private void Update()
+    {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Animator.SetBool("Flipperstick_left", true);
+            leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 50, spring = springStrength, damper = 2 };
+
+            flipperLeftUpSound.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.A))
         {
-            Animator.SetBool("Flipperstick_left", false);
+            leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -40, spring = springStrength, damper = 2 };
+
+            flipperLeftDownSound.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Animator.SetBool("Flipperstick_right", true);
+            rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -50, spring = springStrength, damper = 2 };
+
+            flipperRightUpSound.Play();
         }
 
         if (Input.GetKeyUp(KeyCode.D))
         {
-            Animator.SetBool("Flipperstick_right", false);
+            rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 40, spring = springStrength, damper = 2 };
+
+            flipperRightDownSound.Play();
         }
+    }
+
+
+    public void leftButtonClick()
+    {
+        leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 50, spring = springStrength, damper = 2 };
+
+        flipperLeftUpSound.Play();
+    }
+
+    public void leftButtonRelease()
+    {
+        leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -40, spring = springStrength, damper = 2 };
+
+        flipperLeftDownSound.Play();
+    }
+
+    public void rightButtonClick()
+    {
+        rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -50, spring = springStrength, damper = 2 };
+
+        flipperRightUpSound.Play();
+    }
+
+    public void rightButtonRelease()
+    {
+        rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 40, spring = springStrength, damper = 2 };
+
+        flipperRightDownSound.Play();
     }
 }

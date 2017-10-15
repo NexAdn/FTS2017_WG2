@@ -7,6 +7,11 @@ TagManager:
   - FxTemporaire
   - projectile
   - TeleportIgnore
+  - Phone
+  - Golf_Ball
+  - Coin
+  - Flipper_Ball
+  - Coin_Inserter
   layers:
   - Default
   - TransparentFX
