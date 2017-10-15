@@ -4,38 +4,34 @@ using UnityEngine;
 
 public class Flipper_Manager : MonoBehaviour {
 
-    private Animator Animator;
+    public float springStrength = 100;
+    public Collider leftButton;
+    public Collider rightButton;
 
-	// Use this for initialization
-	void Start () {
-        Animator = GetComponent<Animator>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            Animator.SetTrigger("Launch");
-        }
+    [SerializeField]
+    private Rigidbody rightFlipper = null;
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Animator.SetBool("Flipperstick_left", true);
-        }
+    [SerializeField]
+    private Rigidbody leftFlipper = null;
 
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            Animator.SetBool("Flipperstick_left", false);
-        }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            Animator.SetBool("Flipperstick_right", true);
-        }
+    public void leftButtonClick()
+    {
+        leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 50, spring = springStrength, damper = 2 };
+    }
 
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            Animator.SetBool("Flipperstick_right", false);
-        }
+    public void leftButtonRelease()
+    {
+        leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -40, spring = springStrength, damper = 2 };
+    }
+
+    public void rightButtonClick()
+    {
+        rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -50, spring = springStrength, damper = 2 };
+    }
+
+    public void rightButtonRelease()
+    {
+        rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 40, spring = springStrength, damper = 2 };
     }
 }

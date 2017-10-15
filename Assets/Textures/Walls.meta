@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e8a8d7455c8759040b03a6e66ed1eea0
 folderAsset: yes
 timeCreated: 1507970158
+=======
+guid: eba6c9932a190af4babee4c514914d58
+folderAsset: yes
+timeCreated: 1507970043
+>>>>>>> Flipper
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
