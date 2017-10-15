@@ -9,6 +9,13 @@ public class PhoneDock : MonoBehaviour {
     // Use this for initialization
     public bool dock = true;
     public bool inside = false;
+    public bool end = true;
+
+
+    public bool m_IsDocked = false;
+    public bool m_IsInside = false;
+
+
     public Transform Dockposition;
 	void Start () {
 		
@@ -17,55 +24,57 @@ public class PhoneDock : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (inside)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            unDock();
+        }
+
+        if (inside&&end)
+        {
+            Debug.Log("PhoneDock.Update: inside: " + inside + "end: " + end);
+            //GetComponent<VRTK_ChildOfControllerGrabAttach>().StopGrab(false);
+            //GetComponent<VRTK_InteractableObject>().isGrabbable = false;
             transform.position = Dockposition.position;
             transform.rotation = Dockposition.rotation;
 
             //GetComponent<Rigidbody>().useGravity = false;
             GetComponent<Rigidbody>().isKinematic = true;
-            GetComponent<VRTK_InteractableObject>().isGrabbable = false;
-            GetComponent<VRTK_ChildOfControllerGrabAttach>().StopGrab(false);
-            GetComponent<BoxCollider>().enabled = false;           
-        }
-    }
 
-    public void toggle ()
-    {
-        dock = !dock;
-        //Debug.Log(dock);
+
+            GetComponent<BoxCollider>().enabled = false;
+
+            inside = false;
+        }   
     }
 
     public void Dock()
     {
+        Debug.Log("PhoneDock.Dock");
+        m_IsDocked = true;
 
-        //Debug.Log(dock);
+        Debug.Log(dock);
         inside = true;
 
         GetComponent<StateHandler>().UpdateScreen(2);
-        /*  else
-          {
-              float Test = Controller.GetComponent<VRTK_ControllerEvents>().GetGripAxis();
-
-              Debug.Log("Hand? = " + Test);
-
-              GetComponent<VRTK_ChildOfControllerGrabAttach>().StopGrab(false);
-              // GetComponent<VRTK_InteractableObject>().isGrabbable = false;
-          }*/
     }
+
     public void unDock()
     {
+        if (!m_IsDocked) return;
+        Debug.Log("PhoneDock.unDock");
+        m_IsDocked = false;
+
         inside = false;
-        /*transform.position = Dockposition.position;
-transform.rotation = Dockposition.rotation;*/
+        end = false;
 
         //GetComponent<Rigidbody>().useGravity = false;
-        GetComponent<Rigidbody>().isKinematic = false;
         GetComponent<VRTK_InteractableObject>().isGrabbable = true;
-        //GetComponent<VRTK_ChildOfControllerGrabAttach>().StopGrab(false);
-        GetComponent<BoxCollider>().enabled = true;
-        //inside = false;
+      
+        //GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<Rigidbody>().isKinematic = false;
 
-       // GetComponent<StateHandler>().UpdateScreen(3);
+
+        GetComponent<BoxCollider>().enabled = true;
+        // GetComponent<StateHandler>().UpdateScreen(3);
     }
 }

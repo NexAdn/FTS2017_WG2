@@ -12,7 +12,7 @@ public class StateHandler : MonoBehaviour {
     public Hochkant anchor;
     public PhoneDock Phone;
 
-    private int m_CurrentState = 1;
+    private int m_CurrentState = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -34,32 +34,32 @@ public class StateHandler : MonoBehaviour {
         {
             spotlight.toggleOn();
             akku.TurnOn();
-            anchor.setzeHochkant();
+            //anchor.setzeHochkant();
 
         } else if (gameState == 2)
         {
             akku.TurnOn();
             spotlight.toggleOff();
-            anchor.setzeHochkant();
+            //anchor.setzeHochkant();
         }
         else if (gameState == 3)
         {
-            Phone.unDock();
+         //   Phone.unDock();
             akku.TurnOff();
              spotlight.toggleOff();
              pin.TurnOn();
-             anchor.setzeHochkant();  
+             //anchor.setzeHochkant();  
             akku.TurnOff();
             spotlight.toggleOff();
             pin.TurnOff();
-            anchor.setzeSeitwaerts(); 
-        } else if (gameState == 4)
+            //anchor.setzeSeitwaerts(); 
+        } else
         {
             Phone.unDock();
             akku.TurnOff();
             spotlight.toggleOff();
             pin.TurnOff();
-            anchor.setzeSeitwaerts();
+            //anchor.setzeSeitwaerts();
         }
     }
 }

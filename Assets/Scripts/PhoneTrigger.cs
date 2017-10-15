@@ -34,6 +34,9 @@ public class PhoneTrigger : MonoBehaviour {
     void OnTriggerExit(Collider collider)
     {
         //Debug.Log("exit");
-        phoneDock.unDock();
+        if (collider.tag == "Phone")
+        {
+            phoneDock.unDock();
+        }
     }
 }
