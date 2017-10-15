@@ -22,30 +22,30 @@ public enum EKeyPadKey
 public class Bomb : MonoBehaviour
 {
 
-    public GameObject WinScreen;
-    public GameObject LoseScreen;
+ //   public GameObject WinScreen;
+ //   public GameObject LoseScreen;
 
 
-    public float TimeTillExplosion;
-    public float TimePunishment;
-    public GameObject TimerDisplay;
-    public Text TimerLabel;
+    //public float TimeTillExplosion;
+    //public float TimePunishment;
+    //public GameObject TimerDisplay;
+    //public Text TimerLabel;
     public GameObject Keypad;
     public Text KeypadLabel;
     public String KeypadBlank;
 
-    public GameObject LampA;
-    private Material MatA;
-    public GameObject LampB;
-    private Material MatB;
-    public GameObject LampC;
-    private Material MatC;
-    public GameObject LampD;
-    private Material MatD;
+    //public GameObject LampA;
+    //private Material MatA;
+    //public GameObject LampB;
+    //private Material MatB;
+    //public GameObject LampC;
+    //private Material MatC;
+    //public GameObject LampD;
+    //private Material MatD;
 
 
-    private bool interrupted = false;
-    private bool audioFirstStop = true;
+    //private bool interrupted = false;
+    //private bool audioFirstStop = true;
     private int numInput = 0;
     private int activatedCodes = 0x0;
 
@@ -53,47 +53,47 @@ public class Bomb : MonoBehaviour
     void Start()
     {
         // Status lamps
-        MatA = LampA.GetComponent<Renderer>().material;
-        MatB = LampB.GetComponent<Renderer>().material;
-        MatC = LampC.GetComponent<Renderer>().material;
-        MatD = LampD.GetComponent<Renderer>().material;
+        //MatA = LampA.GetComponent<Renderer>().material;
+        //MatB = LampB.GetComponent<Renderer>().material;
+        //MatC = LampC.GetComponent<Renderer>().material;
+        //MatD = LampD.GetComponent<Renderer>().material;
         KeypadLabel.text = KeypadBlank;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (audioFirstStop)
-        {
-            TimerDisplay.GetComponent<AudioSource>().Play();
-            audioFirstStop = false;
-        }
-        if (!interrupted)
-        {
-            TimeTillExplosion -= Time.deltaTime;
-            int seconds = (int)Math.Floor(TimeTillExplosion) % 60;
-            int minutes = (int)(Math.Floor(TimeTillExplosion) - seconds) / 60;
-            TimerLabel.text = "";
-            if (minutes < 10)
-                TimerLabel.text += "0";
-            TimerLabel.text += minutes.ToString() + ":";
-            if (seconds < 10)
-                TimerLabel.text += "0";
-            TimerLabel.text += seconds.ToString();
-            if (TimeTillExplosion <= 0)
-            {
-                TimerLabel.text = "00:00";
-                InterruptTimer();
-                Time.timeScale = 0;
-                LoseScreen.SetActive(true);
-                GetComponent<AudioSource>().Play();
-                // Verloren
-            }
-        }
-        else
-        {
-            TimerDisplay.GetComponent<AudioSource>().Stop();
-        }
+        //if (audioFirstStop)
+        //{
+        //    TimerDisplay.GetComponent<AudioSource>().Play();
+        //    audioFirstStop = false;
+        //}
+        //if (!interrupted)
+        //{
+        //    TimeTillExplosion -= Time.deltaTime;
+        //    int seconds = (int)Math.Floor(TimeTillExplosion) % 60;
+        //    int minutes = (int)(Math.Floor(TimeTillExplosion) - seconds) / 60;
+        //    TimerLabel.text = "";
+        //    if (minutes < 10)
+        //        TimerLabel.text += "0";
+        //    TimerLabel.text += minutes.ToString() + ":";
+        //    if (seconds < 10)
+        //        TimerLabel.text += "0";
+        //    TimerLabel.text += seconds.ToString();
+        //    if (TimeTillExplosion <= 0)
+        //    {
+        //        TimerLabel.text = "00:00";
+        //        InterruptTimer();
+        //        Time.timeScale = 0;
+        //        LoseScreen.SetActive(true);
+        //        GetComponent<AudioSource>().Play();
+        //        // Verloren
+        //    }
+        //}
+        //else
+        //{
+        //    TimerDisplay.GetComponent<AudioSource>().Stop();
+        //}
     }
 
     public void OnKeyPress(EKeyPadKey key)
@@ -143,22 +143,22 @@ public class Bomb : MonoBehaviour
         }
     }
 
-    private void InterruptTimer()
-    {
-        interrupted = true;
-    }
+    //private void InterruptTimer()
+    //{
+    //    interrupted = true;
+    //}
 
-    public void StartTimer()
-    {
-        interrupted = false;
-    }
+    //public void StartTimer()
+    //{
+    //    interrupted = false;
+    //}
 
     private void InputNum(int num)
     {
         numInput = numInput * 10 + num;
-        // OPTIONAL: Länge des Codes begrenzen
-        if (numInput > 999)
-            numInput = 999;
+        //// OPTIONAL: Länge des Codes begrenzen
+        //if (numInput > 999)
+        //    numInput = 999;
         KeypadLabel.text = numInput.ToString();
     }
 
@@ -168,23 +168,23 @@ public class Bomb : MonoBehaviour
         switch (numInput)
         {
             // CODES KONFIGURIEREN
-            case 351://Leuchtfarbe
+            case 76839://Leuchtfarbe
                 activatedCodes |= 0x01;
                 UpdateLamps();
                 break;
-            case 472://Kamin
-                activatedCodes |= 0x02;
-                UpdateLamps();
-                break;
-            case 958://Wand
-                activatedCodes |= 0x04;
-                break;
-            case 260://Karton
-                activatedCodes |= 0x08;
-                break;
+            //case 472://Kamin
+            //    activatedCodes |= 0x02;
+            //    UpdateLamps();
+            //    break;
+            //case 958://Wand
+            //    activatedCodes |= 0x04;
+            //    break;
+            //case 260://Karton
+            //    activatedCodes |= 0x08;
+            //    break;
             default:
                 // Code falsch
-                TimeTillExplosion -= TimePunishment;
+                //TimeTillExplosion -= TimePunishment;
                 break;
         }
         UpdateLamps();
@@ -201,28 +201,28 @@ public class Bomb : MonoBehaviour
 
     void UpdateLamps()
     {
-        if ((activatedCodes & 0x01) > 0)
+        //if ((activatedCodes & 0x01) > 0)
+        //{
+        //    MatA.color = Color.green;
+        //}
+        //if ((activatedCodes & 0x02) > 0)
+        //{
+        //    MatB.color = Color.green;
+        //}
+        //if ((activatedCodes & 0x04) > 0)
+        //{
+        //    MatC.color = Color.green;
+        //}
+        //if ((activatedCodes & 0x08) > 0)
+        //{
+        //    MatD.color = Color.green;
+        //}
+        if (activatedCodes == (0x01))
         {
-            MatA.color = Color.green;
-        }
-        if ((activatedCodes & 0x02) > 0)
-        {
-            MatB.color = Color.green;
-        }
-        if ((activatedCodes & 0x04) > 0)
-        {
-            MatC.color = Color.green;
-        }
-        if ((activatedCodes & 0x08) > 0)
-        {
-            MatD.color = Color.green;
-        }
-        if (activatedCodes == (0x08 | 0x04 | 0x02 | 0x01))
-        {
-            InterruptTimer();
-            Time.timeScale = 0;
-            WinScreen.SetActive(true);
-            // Gewonnen
+            //InterruptTimer();
+            //Time.timeScale = 0;
+            //WinScreen.SetActive(true);
+            // TODO: Gewonnen
         }
     }
 }
