@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Win_giveFree_Golfball : MonoBehaviour {
 
     public GameObject golfHidePlane;
     public float giveBallFreeTimeAfterWin = 3f;
+    public Text flipperDisplay;
     private bool won = false;
     private float timeAfterWin = 0f;
 
@@ -19,6 +21,8 @@ public class Win_giveFree_Golfball : MonoBehaviour {
             {
                 golfHidePlane.SetActive(false);
             }
+
+            flipperDisplay.text = "YOU WON A BALL!";
         }
     }
 

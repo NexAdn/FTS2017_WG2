@@ -12,6 +12,7 @@ public class Coin_Manager : MonoBehaviour {
     public Transform Ball;
     public Transform ballOrigin;
     public Text flipperDisplay;
+    public AudioSource startupAudioSource;
     private int coinsInserted = 0;
     private bool animationStarted = false;
     private float animationTime = 0f;
@@ -71,6 +72,8 @@ public class Coin_Manager : MonoBehaviour {
     void startFlipper()
     {
         Ball.transform.position = new Vector3(ballOrigin.transform.position.x, ballOrigin.transform.position.y, ballOrigin.transform.position.z);
+
+        startupAudioSource.Play();
 
         flipperDisplay.text = "GAME STARTED";
     }
