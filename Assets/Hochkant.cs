@@ -16,14 +16,14 @@ public class Hochkant : MonoBehaviour {
 
     public void setzeHochkant()
     {
-        transform.position = new Vector3(0f, -0.095f, 0f);
-        transform.eulerAngles = new Vector3(-90f, 0f, 180f);
+       // transform.position = new Vector3(0f, -0.095f, 0f);
+       // transform.eulerAngles = new Vector3(-90f, 0f, 180f);
     }
 
     public void setzeSeitwaerts()
     {
-        transform.position = new Vector3(0.0445f, 0.0021f, 0f);
-        transform.eulerAngles = new Vector3(-90f, -90f, 180f);
+       // transform.position = new Vector3(0.0445f, 0.0021f, 0f);
+       // transform.eulerAngles = new Vector3(-90f, -90f, 180f);
     }
 
 }

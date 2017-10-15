@@ -18,9 +18,12 @@ public class Trigger : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
+
+        Debug.Log(collider.tag);
         if (collider.tag == "Golf_Ball")
         {
-            handy.UpdateScreen(3);
+            handy.UpdateScreen(4);
+            Debug.Log("hit");
         }
     }
 }

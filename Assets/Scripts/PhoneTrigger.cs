@@ -17,12 +17,19 @@ public class PhoneTrigger : MonoBehaviour {
     void OnTriggerStay(Collider collider)
     {
         //Debug.Log(collider.tag);
-        if (collider.tag == "Phone")
+        /*if (collider.tag == "Phone")
+        {
+            phoneDock.Dock();
+        }  */
+
+
+    }
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.tag == "Phone")
         {
             phoneDock.Dock();
         }
-
-
     }
     void OnTriggerExit(Collider collider)
     {

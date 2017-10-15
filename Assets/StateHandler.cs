@@ -5,10 +5,14 @@ using VRTK;
 
 public class StateHandler : MonoBehaviour {
 
-    public float gameState;
+    public int gameState = 1;
     public Toggle spotlight;
     public TogglePin pin;
     public ToggleAkku akku;
+    public Hochkant anchor;
+    public PhoneDock Phone;
+
+    private int m_CurrentState = 1;
 
 	// Use this for initialization
 	void Start () {
@@ -20,29 +24,42 @@ public class StateHandler : MonoBehaviour {
 		
 	}
 
-    public void UpdateScreen(float gameState)
+    public void UpdateScreen(int gameState)
     {
+        if (m_CurrentState > gameState) return;
+
+        m_CurrentState = gameState;
+
         if (gameState == 1)
         {
             spotlight.toggleOn();
             akku.TurnOn();
+            anchor.setzeHochkant();
 
-        } else if (gameState  ==2 )
+        } else if (gameState == 2)
         {
             akku.TurnOn();
             spotlight.toggleOff();
-        }else if (gameState == 3)
+            anchor.setzeHochkant();
+        }
+        else if (gameState == 3)
         {
-            GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<VRTK_InteractableObject>().isGrabbable = true;
+            Phone.unDock();
             akku.TurnOff();
-            spotlight.toggleOff();
-            pin.TurnOn();
-        } else
-        {
+             spotlight.toggleOff();
+             pin.TurnOn();
+             anchor.setzeHochkant();  
             akku.TurnOff();
             spotlight.toggleOff();
             pin.TurnOff();
+            anchor.setzeSeitwaerts(); 
+        } else if (gameState == 4)
+        {
+            Phone.unDock();
+            akku.TurnOff();
+            spotlight.toggleOff();
+            pin.TurnOff();
+            anchor.setzeSeitwaerts();
         }
     }
 }
