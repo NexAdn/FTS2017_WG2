@@ -305,7 +305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Flipper OFF
+  m_Text: Insert Coin
 --- !u!222 &93696988
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -983,11 +983,35 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533966900}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.08111596, y: 0.07628001, z: 0.07628001}
   m_Center: {x: -0.020034984, y: -0.00000047683716, z: 0.00000011920929}
+--- !u!114 &533966905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 533966900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564c7e5d1e3a92848976dff7c3c14edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlipperManager: {fileID: 607779180}
+--- !u!65 &533966906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 533966900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041046, y: 0.07628001, z: 0.07628001}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0.00000011920929}
 --- !u!1 &551155031 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1800040675015262, guid: e7b9cf89703d4c7439e06f80254acffd,
@@ -1000,11 +1024,52 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551155031}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.083885536, y: 0.07628001, z: 0.07628001}
   m_Center: {x: 0.021419771, y: -0.00000047683716, z: 0.00000011920929}
+--- !u!114 &551155036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551155031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bee77a51620ff45bc7d1024f3b2ad8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FlipperManager: {fileID: 607779180}
+--- !u!114 &551155037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551155031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452eb330cfaf7bf45b7a5e683153da3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &551155038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551155031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.041046, y: 0.07628001, z: 0.07628001}
+  m_Center: {x: 0, y: -0.00000047683716, z: 0.00000011920929}
+--- !u!114 &607779180 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114269602483697750, guid: e7b9cf89703d4c7439e06f80254acffd,
+    type: 2}
+  m_PrefabInternal: {fileID: 465728528}
+  m_Script: {fileID: 11500000, guid: 0eb01bdac213345498853d7ef0211076, type: 3}
 --- !u!1 &710511066
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 public class Flipper_Manager : MonoBehaviour {
 
     public float springStrength = 100;
+    public Collider leftButton;
+    public Collider rightButton;
 
     [SerializeField]
     private Rigidbody rightFlipper = null;
@@ -12,30 +14,24 @@ public class Flipper_Manager : MonoBehaviour {
     [SerializeField]
     private Rigidbody leftFlipper = null;
 
-    // Update is called once per frame
-    void Update()
+
+    public void leftButtonClick()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 50, spring = springStrength, damper = 2 };
-        }
+        leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 50, spring = springStrength, damper = 2 };
+    }
 
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -40, spring = springStrength, damper = 2 };
-        }
+    public void leftButtonRelease()
+    {
+        leftFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -40, spring = springStrength, damper = 2 };
+    }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -50, spring = springStrength, damper = 2 };
-        }
+    public void rightButtonClick()
+    {
+        rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = -50, spring = springStrength, damper = 2 };
+    }
 
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 40, spring = springStrength, damper = 2 };
-        }
-
-
-        
+    public void rightButtonRelease()
+    {
+        rightFlipper.GetComponent<HingeJoint>().spring = new JointSpring { targetPosition = 40, spring = springStrength, damper = 2 };
     }
 }
